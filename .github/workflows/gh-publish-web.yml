@@ -30,7 +30,6 @@ jobs:
     - name: Install dependencies
       run: make install
 
-    steps:
     - name: sync website with rsync
       env:
         SSH_KEY: ${{ secrets.SSH_KEY }}
