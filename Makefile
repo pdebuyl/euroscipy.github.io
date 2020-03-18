@@ -54,12 +54,12 @@ help:
 	@echo '                                                                          '
 
 install:
-	pip install -U pip setuptools pipenv
-	pipenv install
+	pip install -U pip setuptools
+	pip install -r requirements.txt
 
 install-ci:
-	pip install -U pip setuptools pipenv
-	pipenv install --dev
+	pip install -U pip setuptools
+	pip install -r requirements.txt
 
 install-dev: install-ci
 
